@@ -1,0 +1,274 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F7F8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li img {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+aside {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.search-doctors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-doctors input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-doctors button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-results {
+    margin-bottom: 20px;
+}
+
+.search-results .doctor {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.names {
+    list-style: none;
+    padding: 0;
+}
+
+.names li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.names li img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.card2, .card3 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card2 img, .card3 img {
+    height: 50px;
+}
+
+.patient-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+.patient-details h2 {
+    margin-top: 0;
+}
+
+
+.patient-details img {
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.patient-details p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.patient-details p span {
+    margin-right: 10px;
+}
+.patient-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.patient-details button:hover {
+    background-color: #0056b3;
+}
+/* Blood Pressure Chart Styles */
+.blood-pressure {
+    margin-top: 20px;
+}
+
+.blood-pressure canvas {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+}
+
+.diagnosis-history {
+    
+    background-color: #FFE6E9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3px;
+    margin-left: 20px;
+    background-color: #C8CCD414;
+}
+.diagnosis-history .card1{
+    
+    background-color: #FFE6E9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3px;
+    background-color: #D8FCF7;
+}
+.diagnosis-history .card2{
+    
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3px;
+    background-color: #FFE6E9;
+}
+.diagnosis-history .card3{
+    
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3px;
+    background-color: #FFE6F1;
+}
+
+.diagnosis-history h2 {
+    margin-top: 0;
+    font: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+}
+
+.history-item {
+    margin: 5px 0;
+}
+
+.history-item h3 {
+    margin-top: 0;
+}
+
+.history-item p {
+    margin: 5px 0;
+}
+.diagnostic-cards .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.diagnostic-cards .card h3 {
+    margin-top: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
